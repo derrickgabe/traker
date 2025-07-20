@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import SearchBar from './Searchbar';
-import ExpenseForm from './Expenseform';
-import ExpenseTable from './Expensetable';
+import SearchBar from './Searchbar.jsx';
+import ExpenseForm from './Expenseform.jsx';
+import ExpenseTable from './Expensetable.jsx';
 
 
 function App() {
@@ -12,11 +12,10 @@ function App() {
   function handleAddExpense(newExpense) {
     setExpenses([...expenses, newExpense]);
   }
-git init
-  function handleDeleteExpense(id) {
-    const updatedExpenses = expenses.filter((expense) => expense.id !== id);
-    setExpenses(updatedExpenses);
-  }
+function handleDeleteExpense(id) {
+  const updatedExpenses = expenses.filter((expense) => expense.id !== id);
+  setExpenses(updatedExpenses);
+}
 
   const filteredExpenses = expenses.filter((expense) =>
     expense.description.toLowerCase().includes(search.toLowerCase()) ||
