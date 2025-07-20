@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import SearchBar from './Searchbar.jsx';
-import ExpenseForm from './Expenseform.jsx';
-import ExpenseTable from './Expensetable.jsx';
+import SearchBar from '/Searchbar.jsx';
+import ExpenseForm from '/Expenseform.jsx';
+import ExpenseTable from '/Expensetable.jsx';
 
 
 function App() {
